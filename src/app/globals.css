@@ -5,6 +5,13 @@
 
 @theme inline {
   --color-background: var(--background);
+  --color-brand: var(--brand-default);
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-600: var(--brand-600);
+  --color-brand-500: var(--brand-500);
+  --color-brand-400: var(--brand-400);
+  --color-brand-300: var(--brand-300);
+  --color-brand-200: var(--brand-200);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -45,6 +52,13 @@
 
 :root {
   --radius: 0.625rem;
+  --brand-accent: oklch(0.72 0.13 156);
+  --brand-default: oklch(0.72 0.13 156);
+  --brand-600: oklch(0.48 0.11 157);
+  --brand-500: oklch(0.82 0.09 152);
+  --brand-400: oklch(0.93 0.12 153);
+  --brand-300: oklch(0.97 0.15 151);
+  --brand-200: oklch(0.99 0.14 159);
   --background: oklch(1 0 0);
   --foreground: oklch(0.129 0.042 264.695);
   --card: oklch(1 0 0);
@@ -79,6 +93,13 @@
 }
 
 .dark {
+  --brand-accent: oklch(0.85 0.2 166);
+  --brand-default: oklch(0.65 0.18 162);
+  --brand-600: oklch(0.78 0.12 142);
+  --brand-500: oklch(0.35 0.15 164);
+  --brand-400: oklch(0.18 0.12 164);
+  --brand-300: oklch(0.09 0.08 161);
+  --brand-200: oklch(0.04 0.03 165);
   --background: oklch(0.129 0.042 264.695);
   --foreground: oklch(0.984 0.003 247.858);
   --card: oklch(0.208 0.042 265.755);
