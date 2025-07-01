@@ -1,4 +1,6 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,12 +19,12 @@ export default function Home() {
             </ul>
           </nav>
           <div className="ml-auto flex gap-4">
-            <button className="text-xs px-2 py-1 border rounded-sm">
-              Sign in
-            </button>
-            <button className="text-xs px-2 py-1 border rounded-sm bg-teal-300 border-teal-400 hover:border-teal-500">
-              Start your project
-            </button>
+            <Button size="sm" variant="outline" asChild>
+              <Link href="#">Sign in</Link>
+            </Button>
+            <Button size="sm" asChild>
+              <Link href="#">Start your project</Link>
+            </Button>
           </div>
         </div>
       </header>
@@ -38,12 +40,12 @@ export default function Home() {
         </p>
 
         <div className="space-x-4">
-          <button className="px-2 py-1 rounded-sm bg-brand-400 dark:bg-brand-500 border border-brand/75 hover:border-brand/100">
-            Start your project
-          </button>
-          <button className="px-2 py-1 border rounded-sm">
-            Request a demo
-          </button>
+          <Button asChild>
+            <Link href="#">Start your project</Link>
+          </Button>
+          <Button variant="outline" asChild>
+            <Link href="#">Request a demo</Link>
+          </Button>
         </div>
       </section>
     </div>
