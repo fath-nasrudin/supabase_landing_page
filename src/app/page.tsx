@@ -48,8 +48,10 @@ export default function Home() {
             <Link href="#">Request a demo</Link>
           </Button>
         </div>
-        <Logos />
       </section>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Logos />
+      </div>
     </div>
   );
 }
