@@ -2,10 +2,11 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { Logos } from "./logos";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <header className="border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  py-4 font-semibold flex gap-8 items-center">
           <div>Supabase</div>
@@ -27,6 +28,7 @@ export default function Home() {
               <Link href="#">Start your project</Link>
             </Button>
           </div>
+          <ThemeToggle />
         </div>
       </header>
       <section className="py-16 sm:py-18 lg:py-24 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col gap-8">
