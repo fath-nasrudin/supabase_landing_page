@@ -46,10 +46,10 @@ export function Logos() {
           ))}
         </div>
         {/* left side blur */}
-        <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-gray-50 to-transparent pointer-events-none z-10"></div>
+        <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-background to-transparent pointer-events-none z-10"></div>
 
         {/* right side blur */}
-        <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-gray-50 to-transparent pointer-events-none z-10"></div>
+        <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-background to-transparent pointer-events-none z-10"></div>
       </div>
       {/* heading */}
       <p className="w-full text-center text-sm font-medium text-foreground mt-6">
