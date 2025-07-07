@@ -1,6 +1,8 @@
 "use client";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { Button } from "./ui/button";
+import { Moon, Sun } from "lucide-react";
 
 export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
@@ -13,10 +15,11 @@ export function ThemeToggle() {
   if (!mounted) return null; // jangan render apapun dulu
 
   return (
-    <button
+    <Button
+      variant={"ghost"}
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
-      {resolvedTheme === "dark" ? "🌞 Light Mode" : "🌙 Dark Mode"}
-    </button>
+      {resolvedTheme === "dark" ? <Sun /> : <Moon />}
+    </Button>
   );
 }
