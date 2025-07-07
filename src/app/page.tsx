@@ -20,15 +20,20 @@ export default function Home() {
               <li>Blog</li>
             </ul>
           </nav>
-          <div className="ml-auto flex gap-4">
-            <Button size="sm" variant="outline" asChild>
+          <div className="ml-auto flex gap-4 items-center">
+            <Button
+              className="hidden sm:inline-flex"
+              size="sm"
+              variant="outline"
+              asChild
+            >
               <Link href="#">Sign in</Link>
             </Button>
-            <Button size="sm" asChild>
+            <Button className="hidden sm:inline-flex" size="sm" asChild>
               <Link href="#">Start your project</Link>
             </Button>
+            <ThemeToggle />
           </div>
-          <ThemeToggle />
         </div>
       </header>
       <section className="py-16 sm:py-18 lg:py-24 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col gap-8">
