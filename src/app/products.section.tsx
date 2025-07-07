@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card";
 import { CheckIcon, LockIcon } from "lucide-react";
 import Link from "next/link";
+import { StorageVisual } from "./storage-visual";
 
 export function ProductSection() {
   return (
@@ -19,7 +20,7 @@ export function ProductSection() {
             className="sm:h-[400px] col-span-6 xl:col-span-3 group"
             href="#"
           >
-            <Card className="h-full">
+            <Card className="h-full relative">
               <CardHeader>
                 <CardTitle>
                   <h2 className="flex gap-2 items-center">
@@ -46,6 +47,7 @@ export function ProductSection() {
                   </li>
                 </ul>
               </CardContent>
+              <StorageVisual />
             </Card>
           </Link>
         ))}
