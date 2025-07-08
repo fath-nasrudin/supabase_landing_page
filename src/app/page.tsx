@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Logos } from "./logos";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { ProductSection } from "./products.section";
+import { ProductSection } from "@/components/products/products-section";
 
 export default function Home() {
   return (
