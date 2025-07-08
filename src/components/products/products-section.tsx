@@ -1,5 +1,5 @@
 import {
-  Card,
+  CardWithHover,
   CardContent,
   CardDescription,
   CardHeader,
@@ -166,7 +166,7 @@ export function ProductSection() {
           >
             {/* Probably need refactor since its duplicate the card to handle "twice" card */}
             {!product.twice && (
-              <Card className="h-full relative">
+              <CardWithHover className="h-full relative">
                 <CardHeader>
                   <CardTitle>
                     <h2 className="flex gap-2 items-center sm:justify-center">
@@ -186,12 +186,12 @@ export function ProductSection() {
                 {!product.twice && (
                   <product.Visual className="hidden sm:block" />
                 )}
-              </Card>
+              </CardWithHover>
             )}
 
             {/* For Product twice in width */}
             {product.twice && (
-              <Card className="h-full relative flex flex-col xl:flex-row">
+              <CardWithHover className="h-full relative flex flex-col xl:flex-row">
                 <CardContent className="h-full flex flex-col justify-between">
                   <div className="space-y-4">
                     <h2
@@ -223,7 +223,7 @@ export function ProductSection() {
 
                 {/* twice visual */}
                 <product.Visual className="hidden sm:block" />
-              </Card>
+              </CardWithHover>
             )}
           </Link>
         ))}
