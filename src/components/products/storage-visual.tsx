@@ -10,7 +10,7 @@ export function StorageVisual({ className }: { className?: string }) {
         <div className="flex flex-col gap-2">
           {cols.map((icon, idx2) => (
             <div key={idx2} className="flex gap-2">
-              {Array.from({ length: 10 }).map((_, idx3) => {
+              {Array.from({ length: 30 }).map((_, idx3) => {
                 const Icon = icon;
                 return (
                   <div
