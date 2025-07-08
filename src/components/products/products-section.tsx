@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { CheckIcon, DiscIcon, LockIcon } from "lucide-react";
+import { CheckIcon, DiscIcon, LockIcon, NetworkIcon } from "lucide-react";
 import Link from "next/link";
 import { FunctionsVisual } from "./functions-visual";
 import { StorageVisual } from "./storage-visual";
@@ -16,19 +16,23 @@ const products = [
     title: "Storage",
     subtitle: (
       <>
-        every project is <strong>a full postgres database</strong>, the world's
-        most trusted relational database.
+        <strong className="text-foreground">Store, organize, and serve</strong>
+        <br className="hidden sm:inline-block xl:hidden 2xl:inline-block" />{" "}
+        large files, from videos to images.
       </>
     ),
     Visual: StorageVisual,
   },
   {
-    Icon: LockIcon,
+    Icon: NetworkIcon,
     title: "Edge Functions",
     subtitle: (
       <>
-        every project is <strong>a full postgres database</strong>, the world's
-        most trusted relational database.
+        Easily write custom code
+        <br className="hidden sm:inline-block" />{" "}
+        <strong className="text-foreground">
+          without deploying or scaling servers.
+        </strong>
       </>
     ),
     Visual: FunctionsVisual,
@@ -169,14 +173,16 @@ export function ProductSection() {
             <Card className="h-full relative">
               <CardHeader>
                 <CardTitle>
-                  <h2 className="flex gap-2 items-center">
+                  <h2 className="flex gap-2 items-center sm:justify-center">
                     <product.Icon size={20} /> {product.title}
                   </h2>
                 </CardTitle>
                 <CardDescription className="text-sm"></CardDescription>
               </CardHeader>
-              <CardContent className="text-sm h-full flex flex-col justify-between">
-                <p className="text-sm">{product.subtitle}</p>
+              <CardContent className="text-sm h-full flex flex-col justify-between -mt-4">
+                <p className="text-sm font-medium text-muted-foreground sm:text-center">
+                  {product.subtitle}
+                </p>
                 {product.highlight}
               </CardContent>
               {/* <StorageVisual /> */}
