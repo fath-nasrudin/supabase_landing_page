@@ -1,10 +1,11 @@
+import { cn } from "@/lib/utils";
 import { FileIcon, ImageIcon, VideoIcon } from "lucide-react";
 
-export function StorageVisual() {
+export function StorageVisual({ className }: { className?: string }) {
   const cols = [ImageIcon, FileIcon, VideoIcon];
 
   return (
-    <figure className="group absolute inset-0 overflow-hidden">
+    <figure className={cn("group absolute inset-0 overflow-hidden", className)}>
       <div className="absolute p-4 bottom-0 left-0 animate-marquee paused motion-safe:group-hover:running">
         <div className="flex flex-col gap-2">
           {cols.map((icon, idx2) => (
