@@ -8,6 +8,7 @@ import {
 import { CheckIcon, LockIcon } from "lucide-react";
 import Link from "next/link";
 import { StorageVisual } from "./storage-visual";
+import { FunctionsVisual } from "./functions-visual";
 
 export function ProductSection() {
   return (
@@ -47,7 +48,8 @@ export function ProductSection() {
                   </li>
                 </ul>
               </CardContent>
-              <StorageVisual />
+              {/* <StorageVisual /> */}
+              <FunctionsVisual className="hidden sm:block" />
             </Card>
           </Link>
         ))}
