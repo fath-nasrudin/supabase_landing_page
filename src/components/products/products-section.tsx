@@ -9,6 +9,7 @@ import { CheckIcon, DiscIcon, LockIcon, NetworkIcon } from "lucide-react";
 import Link from "next/link";
 import { FunctionsVisual } from "./functions-visual";
 import { StorageVisual } from "./storage-visual";
+import { AuthenticationVisual } from "./authentication-visual";
 
 const products = [
   {
@@ -39,27 +40,18 @@ const products = [
   },
   {
     Icon: LockIcon,
-    title: "File Storage",
+    title: "Authentication",
     subtitle: (
       <>
-        every project is <strong>a full postgres database</strong>, the world's
-        most trusted relational database.
+        <strong className="text-foreground">
+          Add user sign ups and logins
+        </strong>
+        ,
+        <br className="hidden lg:inline-block" /> securing your data with Row
+        Level Security.
       </>
     ),
-    highlight: (
-      <ul className="font-semibold">
-        <li className="flex gap-1 items-center">
-          <CheckIcon className="inline h-4 w-4" /> 100% portable
-        </li>
-        <li className="flex gap-1 items-center">
-          <CheckIcon className="inline h-4 w-4" /> Built in Auth with RLS
-        </li>
-        <li className="flex gap-1 items-center">
-          <CheckIcon className="inline h-4 w-4" /> Easy to extend
-        </li>
-      </ul>
-    ),
-    Visual: FunctionsVisual,
+    Visual: AuthenticationVisual,
   },
   {
     Icon: LockIcon,
