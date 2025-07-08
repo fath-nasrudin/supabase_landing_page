@@ -5,11 +5,18 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { CheckIcon, DiscIcon, LockIcon, NetworkIcon } from "lucide-react";
+import {
+  BoxIcon,
+  CheckIcon,
+  DiscIcon,
+  LockIcon,
+  NetworkIcon,
+} from "lucide-react";
 import Link from "next/link";
 import { FunctionsVisual } from "./functions-visual";
 import { StorageVisual } from "./storage-visual";
 import { AuthenticationVisual } from "./authentication-visual";
+import { DataAPIsVisual } from "./data-apis-visual";
 
 const products = [
   {
@@ -54,28 +61,16 @@ const products = [
     Visual: AuthenticationVisual,
   },
   {
-    Icon: LockIcon,
-    title: "Functions Edge",
+    Icon: BoxIcon,
+    title: "Data APIs",
     subtitle: (
       <>
         every project is <strong>a full postgres database</strong>, the world's
         most trusted relational database.
       </>
     ),
-    highlight: (
-      <ul className="font-semibold">
-        <li className="flex gap-1 items-center">
-          <CheckIcon className="inline h-4 w-4" /> 100% portable
-        </li>
-        <li className="flex gap-1 items-center">
-          <CheckIcon className="inline h-4 w-4" /> Built in Auth with RLS
-        </li>
-        <li className="flex gap-1 items-center">
-          <CheckIcon className="inline h-4 w-4" /> Easy to extend
-        </li>
-      </ul>
-    ),
-    Visual: FunctionsVisual,
+
+    Visual: DataAPIsVisual,
   },
   {
     Icon: LockIcon,
