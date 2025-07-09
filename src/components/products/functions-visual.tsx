@@ -31,6 +31,7 @@ export function FunctionsVisual({ className }: { className?: string }) {
     typed?.start();
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let hoverTimeoutRef: any;
 
   const handleMouseEnter = () => {
@@ -47,6 +48,7 @@ export function FunctionsVisual({ className }: { className?: string }) {
   useEffect(() => {
     return () => {
       typed?.destroy();
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
       hoverTimeoutRef && clearTimeout(hoverTimeoutRef);
     };
   }, []);

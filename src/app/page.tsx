@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import Link from "next/link";
 import { Logos } from "./logos";
 import { ThemeToggle } from "@/components/theme-toggle";

@@ -93,8 +93,8 @@ const products = [
     title: "Data APIs",
     subtitle: (
       <>
-        every project is <strong>a full postgres database</strong>, the world's
-        most trusted relational database.
+        every project is <strong>a full postgres database</strong>, the
+        world&apos;s most trusted relational database.
       </>
     ),
 
@@ -105,8 +105,8 @@ const products = [
     title: "Vector",
     subtitle: (
       <>
-        every project is <strong>a full postgres database</strong>, the world's
-        most trusted relational database.
+        every project is <strong>a full postgres database</strong>, the
+        world&apos;s most trusted relational database.
       </>
     ),
     highlight: (
@@ -129,8 +129,8 @@ const products = [
     title: "Data APIs",
     subtitle: (
       <>
-        every project is <strong>a full postgres database</strong>, the world's
-        most trusted relational database.
+        every project is <strong>a full postgres database</strong>, the
+        world&apos;s most trusted relational database.
       </>
     ),
     highlight: (
