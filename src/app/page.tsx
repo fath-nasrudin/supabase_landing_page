@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Logos } from "./logos";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { ProductSection } from "@/components/products/products-section";
+import { Footer } from "@/components/footer/footer";
 
 export default function Home() {
   return (
@@ -61,6 +62,7 @@ export default function Home() {
         <Logos />
       </div>
       <ProductSection />
+      <Footer className="border-t" />
     </div>
   );
 }
