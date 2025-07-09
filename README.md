@@ -1,4 +1,4 @@
-# Grinding UI
+# Supabase-oid Landing Page
 
 A modern landing page inspired by [Supabase](https://supabase.com/), built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [shadcn/ui](https://ui.shadcn.com/), and [Typed.js](https://mattboldt.com/demos/typed-js/).
 
@@ -15,7 +15,7 @@ A modern landing page inspired by [Supabase](https://supabase.com/), built with 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/grinding-ui.git
+   git clone https://github.com/fath-nasrudin/supabase-landing-page.git
    cd grinding-ui
    ```
 
