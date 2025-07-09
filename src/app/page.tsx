@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Logos } from "./logos";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { ProductSection } from "@/components/products/products-section";
 
 export default function Home() {
   return (
@@ -59,6 +60,7 @@ export default function Home() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Logos />
       </div>
+      <ProductSection />
     </div>
   );
 }
